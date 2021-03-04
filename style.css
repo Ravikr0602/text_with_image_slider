@@ -1,0 +1,307 @@
+
+.Award
+{
+  width: 99.4%;
+  height: 750px;
+}
+#achiev
+{
+  text-align: center;
+  font-size: 3rem;
+  
+}
+.certificate_detail
+{
+  list-style: none;
+  margin-left: 160px;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+   
+
+} 
+
+input[type="radio"]
+{
+  display: none;
+}
+.js-slider {
+  position: relative;
+  width: 80%;
+  height: 695px;
+  margin: 0 auto;
+}
+.js-slider_item 
+{
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: right center;
+  transform: translate3d(0%, 0%, 0) rotateY(30deg) scaleX(0.95);
+  transition: all 1s ease,transform 1s cubic-bezier(0.43, 0.28, 0.51, 1);
+}
+#pic-1:checked ~ .js-slider .js-slider_item.img-1,
+#pic-2:checked ~ .js-slider .js-slider_item.img-2,
+#pic-3:checked ~ .js-slider .js-slider_item.img-3,
+#pic-4:checked ~ .js-slider .js-slider_item.img-4,
+#pic-5:checked ~ .js-slider .js-slider_item.img-5,
+#pic-6:checked ~ .js-slider .js-slider_item.img-6
+{
+  opacity: 1;
+  visibility: visible;
+  transform-origin: left center;
+  transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
+}
+.js-slider_img {
+  width: 84%;
+  margin-left: 8%;
+  margin-right: 8%;
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid gray;
+  box-shadow: 4px 4px 4px 4px gray;
+}
+.certificate_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* width: 100%; */
+  width: 880px;
+  height: 420px;
+  border: 1px solid gray;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+figcaption {
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+.cert_name {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  
+}
+.c-name {
+  display: inline-block;
+  color: aqua;
+  background-color: black;
+  line-height: 1;
+  letter-spacing: 2px;
+  padding: 0.5em 0.9em;
+  margin-right: 0.5em;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.certificate_brand
+{
+  font-size: 1.4rem;
+}
+
+.js-slider_nav {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translate3d(0, -50%, 0);
+  
+}
+.js-slider_nav_item.prev {
+  left: 0;
+}
+.js-slider_nav_item.next {
+  right: 0;
+  transform: rotateY(180deg);
+}
+.js-slider_nav_item {
+  position: absolute;
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #0078ff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.js-slider_nav_item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1rem;
+  top: 55%;
+  width: 1rem;
+  height: 1px;
+  background-color: #0078ff;
+  transform-origin: left bottom;
+  transform: translate3d(0, -50%, 0) rotate(-45deg);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.js-slider_nav_item:hover {
+  transform: translate3d(-30%, 0, 0);
+}
+.js-slider_nav_item.next:hover {
+  transform: rotateY(180deg) translate3d(-30%, 0, 0);
+}
+.js-slider_nav_item:hover:before {
+  transform: translate3d(0, -50%, 0) rotate(-30deg);
+}
+.js-slider_nav_item:after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 2rem;
+  height: 1px;
+  background-color: #0078ff;
+  transform: translate3d(-50%, -50%, 0);
+}
+#pic-1:checked ~ .js-slider .js-slider_nav .pic-nav-1,
+#pic-2:checked ~ .js-slider .js-slider_nav .pic-nav-2,
+#pic-3:checked ~ .js-slider .js-slider_nav .pic-nav-3, 
+#pic-4:checked ~ .js-slider .js-slider_nav .pic-nav-4,
+#pic-5:checked ~ .js-slider .js-slider_nav .pic-nav-5,
+#pic-6:checked ~ .js-slider .js-slider_nav .pic-nav-6 {
+  display: block;
+}
+.js-slider_indicator {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+  
+}
+.js-slider-indi {
+  position: relative;
+  display: inline-block;
+  padding: 2rem;
+  cursor: pointer;
+}
+.js-slider-indi:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  background: #0078ff;
+  transform: translate3d(-50%, -50%, 0);
+}
+.js-slider-indi:hover:after {
+  transform: translate3d(-50%, -50%, 0) scale(1.5);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#pic-1:checked ~ .js-slider .js-slider_indicator .indi-1:after,
+#pic-2:checked ~ .js-slider .js-slider_indicator .indi-2:after,
+#pic-3:checked ~ .js-slider .js-slider_indicator .indi-3:after, 
+#pic-4:checked ~ .js-slider .js-slider_indicator .indi-4:after,
+#pic-5:checked ~ .js-slider .js-slider_indicator .indi-5:after,
+#pic-6:checked ~ .js-slider .js-slider_indicator .indi-6:after 
+{
+  transform: translate3d(-50%, -50%, 0) scale(2.5);
+}
+
+
+@media screen and (max-width: 768px)
+{
+  .Award
+  {
+    width: 99.4%;
+    height: 620px;
+  
+   }
+  #achiev
+  {
+    font-size: 2.2rem;
+  }
+  .js-slider {
+    position: relative;
+    width: 92%;
+    height: 560px;
+    margin-top: 15px;
+  }
+  .js-slider_img {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid gray;
+    box-shadow: 4px 4px 4px 4px gray;
+  }
+  .certificate_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 100%; */
+    width: 420px;
+    height: 300px;
+    border: 1px solid gray;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .js-slider_indicator {
+    position: absolute;
+    left: 0;
+    top: 57%;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .js-slider-indi {
+    position: relative;
+    display: inline-block;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  figcaption {
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+  .c-name {
+   
+    
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .certificate_detail
+  {
+     list-style: none;
+     margin-left: 10px;
+     font-size: 1.4rem;
+     font-weight: 500;
+  
+  } 
+  .js-slider_nav {
+    position: absolute;
+    left: 0;
+    top: 28%;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+    
+  }
+  .js-slider_nav_item {
+    position: absolute;
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #e60012;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
